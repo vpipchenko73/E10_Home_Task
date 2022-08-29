@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    align-items: center;
+
+}
+
+.grid-item {
+    min-height: 300px;
+
+}
+
+@media screen and (min-width: 600px) {
+.grid-wrapper {
+ justify-content: center;
+ }
+}
+@media screen and (max-width: 600px) {
+.mobile{
+ width: 500px;
+ }
+}
+.a_exit {
+text-align: center;
+}
+
+
+</style>
+</head>
+<body class="mobile">
+<hr>
+<div class="grid-wrapper">
+   		 <div class="grid-item">
+   		 <img src="../img/ZP1.jpg" width="500" height="350"alt="Man"   >
+   		 </div>
+   		 <div class="grid-item">
+   		  <p>
+   		     &emsp; Еще одним моим хобби является программирование - я увлекаюсь им со времен старших классов,
+   		     сначала этобыл простой БЕЙСИК, потом более серьезный С++  с помощью которого, уже после окончания
+   		     института, я смог собирать разные автоматические устройства на основе микроконтроллеров. Но это все
+   		     было по сути дела игрушками, а мне всегда хотелось научиться создавать программы на профессиональной
+   		     основе , к сожалению самому фундаментально изучить один из популярных языков программирования
+   		     у меня не получилось (((( более успешно получается постигать эот процесс в - SkillFactory.
+   		  <p>
+   		 </div>
+
+   	 </div>
+<hr>
+     <br>
+   	 <p class="a_exit" >
+   		 <a  href="../start.html" >НА ГЛАВНУЮ</a>
+   	 </p>
+
+</body>
+</html>

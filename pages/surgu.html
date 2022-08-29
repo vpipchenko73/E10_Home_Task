@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    align-items: center;
+
+}
+
+.grid-item {
+    min-height: 300px;
+
+}
+
+@media screen and (min-width: 600px) {
+.grid-wrapper {
+ justify-content: center;
+ }
+}
+@media screen and (max-width: 600px) {
+.mobile{
+ width: 500px;
+ }
+}
+.a_exit {
+text-align: center;
+}
+
+
+</style>
+</head>
+<body class="mobile">
+<hr>
+<div class="grid-wrapper">
+   		 <div class="grid-item">
+   		 <img src="../img/surgu.jpg" width="500" height="375"alt="Man"  >
+   		 </div>
+   		 <div class="grid-item">
+   		  <p>
+   		     &emsp; <strong>Сургутский государственный университет</strong> основан в мае 1993 года. Основная цель развития СурГУ — трансформация
+   		     в университет нового типа, поддерживающий и обеспечивающий инновационное экономическое развитие
+   		     региона посредством концентрации интеллектуального потенциала, современной научно-образовательной
+   		     инфраструктуры и их приближения к потребностям регионального бизнеса.<br>
+   		      &emsp; В университете реализуются программы высшего образования всех уровней по широкому спектру направлений и
+   		     специальностей на базе шести учебно-научных институтов: гуманитарного образования и спорта,
+   		     государства и права, естественных и технических наук, экономики и управления, медицинского и
+   		     политехнического институтов.
+   		  </p>
+   		 </div>
+
+   	 </div>
+<hr>
+     <br>
+   	 <p class="a_exit" >
+   		 <a  href="../start.html" >НА ГЛАВНУЮ</a>
+   	 </p>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 24px;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<hr>
+<center>
+<h2 >Резюме</h2>
+<h2 >Пипченко Вадим Викторович</h2>
+<img src="img/Foto.jpg" width="300" height="402" alt="Man"  >
+</center>
+<p>О себе </p>
+<button type="button" class="collapsible">Возраст, образование, хобби</button>
+<div class="content">
+  <p> В настоящий момент мне 49 лет.
+      Проживаю в городе <a href="pages/sity.html">Ханты-Мансийске. </a> <br>
+      По первому образованию я инженер радиотехник, обучался в
+      <a href="pages/tusur.html">&quot;Томском университете систем управления и радиоэлектроники&quot; </a>
+      - ( период обучения 1990-1995 года ) <br>
+      По второму образованию я юрисконсульт, обучался в
+      <a href="pages/surgu.html">&quot;Сургутском государственном университете&quot; </a>
+      - ( период обучения 2007-2010 года ). <br>
+      Мои увлечения это <a href="pages/fishing.html">рыбалка </a>
+      и <a href="pages/hobby.html">программирование.</a>
+  </p>
+</div>
+<p>Трудовая деятельность:</p>
+<button type="button" class="collapsible">Период с 1995 по 2022 года</button>
+<div class="content">
+  <p>
+     В указанный период последовательно работал на следующих предприятиях:
+      <ul>
+        <li><a href="https://uglevodorody.ru/factory/surgutskiy-gpz">АО СУРГУТСКИЙ ГПЗ </a></li>
+        <li><a href="https://rkn.gov.ru/">ГОССВЯЗЬНАЗОР РФ </a></li>
+        <li><a href="https://xmao.megafon.ru/">АО МЕГАФОН </a></li>
+        <li><a href="https://ekt.rt.ru/">АО РОСТЕЛЕКОМ </a></li>
+      </ul>
+  </p>
+  <p>
+    <Более подробная информация представлена <a href="pages/time_line.html">здесь </a>
+  </p>
+</div>
+<hr>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
